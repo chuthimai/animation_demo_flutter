@@ -23,7 +23,7 @@ class _DayNightAnimationState extends State<DayNightAnimation>
       vsync: this,
     );
 
-    _animation = Tween<double>(begin: 1, end: 0).animate(
+    _animation = Tween<double>(begin: 0, end: 1).animate(
       CurvedAnimation(parent: _controller, curve: Curves.easeInOutQuint)
     );
   }
@@ -50,7 +50,7 @@ class _DayNightAnimationState extends State<DayNightAnimation>
   void didUpdateWidget(covariant DayNightAnimation oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (widget.isPlaying) {
-      if (_animation.value == 0) {
+      if (_animation.value == 1) {
         _controller.reverse();
       } else {
         _controller.forward();

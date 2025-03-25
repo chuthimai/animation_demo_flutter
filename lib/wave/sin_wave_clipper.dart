@@ -19,14 +19,14 @@ class SinWaveClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     Path path = Path();
-    path.moveTo(0, 0);
+    path.moveTo(0, size.height);
 
     for (double x = 0; x <= size.width; x++) {
       double y = waveAmplitude * sin((2 * pi / lambda) * x + alpha0);
-      path.lineTo(x, size.height * heightPart + y);
+      path.lineTo(x, size.height * (1-heightPart) + y);
     }
 
-    path.lineTo(size.width, 0);
+    path.lineTo(size.width, size.height);
     path.close();
     return path;
   }
