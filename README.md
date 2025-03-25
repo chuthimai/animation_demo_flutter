@@ -24,8 +24,9 @@ Thử làm animation sóng biển chuyển động và chuyển đổi giữa ng
 ## Kết quả sau khi chạy chương trình:
 
 
+https://github.com/user-attachments/assets/373f799c-9110-4a85-a79b-f03c08f52897
 
-https://github.com/user-attachments/assets/e3cbf8ea-d5c6-4ed7-86b3-7ad4f8773a34
+
 
 
 
